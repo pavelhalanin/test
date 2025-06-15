@@ -25,11 +25,6 @@ class Ui {
             <link rel="stylesheet" href="/assets/npm/node_modules/bootstrap/dist/css/bootstrap.min.css" />
             <link rel="stylesheet" href="/assets/npm/node_modules/bootstrap-icons/font/bootstrap-icons.min.css" />
             <script src="/assets/npm/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
-            <script src="/assets/cdn/code.jquery.com/jquery-3.7.1.min.js"></script>
-            <link rel="stylesheet" href="/assets/cdn/cdn.datatables.net/2.2.2/css/dataTables.bootstrap5.min.css" />
-            <script src="/assets/cdn/cdn.datatables.net/2.2.2/js/dataTables.min.js"></script>
-            <script src="/assets/cdn/cdn.datatables.net/2.2.2/js/dataTables.bootstrap5.min.js"></script>
         </head>
         <body style="height: 100%;">
 
