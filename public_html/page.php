@@ -6,11 +6,17 @@ try {
     include_once "$HOME/env.php";
     include_once "$HOME/_helpers/Ui.php";
     include_once "$HOME/_helpers/Icons.php";
+    include_once "$HOME/_helpers/Sitemap.php";
     include_once "$HOME/_libs/github.com/erusev/parsedown/Parsedown.php";
 
     $url = $_SERVER['REQUEST_URI'];
     $path = parse_url($url, PHP_URL_PATH); // Получаем путь без параметров
     $urlSegment = basename($path); // Последний сегмент URL
+
+    if (strcmp($urlSegment, 'sitemap.xml') == 0) {
+        Sitemap::render();
+        exit;
+    }
 
     if (strlen($urlSegment) == 0) {
         $urlSegment = 'index';
