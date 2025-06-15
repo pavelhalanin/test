@@ -124,6 +124,15 @@ try {
             overflow: hidden;
             position: relative;
         }
+
+        @media (max-width: 1000px) {
+            .markdown_text img {
+                width: 100%;
+                max-width: 1000px;
+                text-align: center;
+                margin: 0 auto;
+            }
+        }
     </style>
 
     <div class='container'>
